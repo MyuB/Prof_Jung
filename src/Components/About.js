@@ -7,53 +7,41 @@ class About extends Component {
 
     const name = this.props.data.name;
     const profilepic = "images/" + this.props.data.image;
-    const bio = this.props.data.bio;
-    const street = this.props.data.address.street;
-    const city = this.props.data.address.city;
-    const state = this.props.data.address.state;
-    const zip = this.props.data.address.zip;
-    const phone = this.props.data.phone;
-    const email = this.props.data.email;
-    const resumeDownload = this.props.data.resumedownload;
+    const bio =
+      "인하대학교 프런티어학부대학 조교수, 교양책임교수, 자유전공학부장";
+    const street = "22212 인천광역시 미추홀구 인하로 100";
+    const office = "인하대학교 60주년기념관 1215호";
+    const phone = "032-860-8280";
+    const email = "yjjeong@inha.ac.kr";
 
     return (
       <section id="about">
         <Fade duration={1000}>
           <div className="row">
-            <div className="three columns">
+            <div className="columns">
               <img
                 className="profile-pic"
                 src={profilepic}
                 alt="Nordic Giant Profile Pic"
               />
             </div>
-            <div className="nine columns main-col">
+            <div className="columns main-col">
               <h2>About Me</h2>
-
               <p>{bio}</p>
               <div className="row">
                 <div className="columns contact-details">
                   <h2>Contact Details</h2>
-                  <p className="address">
-                    <span>{name}</span>
-                    <br />
-                    <span>
+                  <div className="address" style={{ width: "500px" }}>
+                    <span style={{ width: "400px" }}>
                       {street}
                       <br />
-                      {city} {state}, {zip}
+                      {office}
                     </span>
                     <br />
-                    <span>{phone}</span>
+                    <span style={{ width: "400px" }}>{phone}</span>
                     <br />
-                    <span>{email}</span>
-                  </p>
-                </div>
-                <div className="columns download">
-                  <p>
-                    <a href={resumeDownload} className="button">
-                      <i className="fa fa-download"></i>Download Resume
-                    </a>
-                  </p>
+                    <span style={{ width: "400px" }}>{email}</span>
+                  </div>
                 </div>
               </div>
             </div>

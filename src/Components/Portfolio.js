@@ -1,21 +1,23 @@
 import React, { Component } from "react";
-import Zmage from "react-zmage";
 import Fade from "react-reveal";
+import { Books } from "../Data/Books";
+import { Papers } from "../Data/Papers";
 
-let id = 0;
 class Portfolio extends Component {
   render() {
-    if (!this.props.data) return null;
-
-    const projects = this.props.data.projects.map(function (projects) {
-      let projectImage = "images/portfolio/" + projects.image;
-
+    const books = Books.map((elem) => {
       return (
-        <div key={id++} className="columns portfolio-item">
-          <div className="item-wrap">
-            <Zmage alt={projects.title} src={projectImage} />
-            <div style={{ textAlign: "center" }}>{projects.title}</div>
-          </div>
+        <div>
+          <span key={elem.id}>{elem.name}</span>
+          <br />
+        </div>
+      );
+    });
+
+    const papers = Papers.map((elem) => {
+      return (
+        <div>
+          <span key={elem.id}>{elem.name}</span>
         </div>
       );
     });
@@ -24,16 +26,12 @@ class Portfolio extends Component {
       <section id="portfolio">
         <Fade left duration={1000} distance="40px">
           <div className="row">
-            <div className="twelve columns collapsed">
-              <h1>Check Out Some of My Works.</h1>
-
-              <div
-                id="portfolio-wrapper"
-                className="bgrid-quarters s-bgrid-thirds cf"
-              >
-                {projects}
-              </div>
-            </div>
+            <h1 style={{ fontSize: "4rem" }}>주요학술논문</h1>
+            <div style={{ textAlign: "center" }}>{papers}</div>
+          </div>
+          <div className="row" style={{ marginTop: "50pt" }}>
+            <h1 style={{ fontSize: "4rem" }}>주요 학술 저서</h1>
+            <div style={{ textAlign: "center" }}>{books}</div>
           </div>
         </Fade>
       </section>

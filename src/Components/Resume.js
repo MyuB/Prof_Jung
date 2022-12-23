@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Slide from "react-reveal";
+import { Lectures } from "../Data/Lectures";
 
 class Resume extends Component {
   getRandomColor() {
@@ -18,9 +19,9 @@ class Resume extends Component {
     const education = this.props.data.education.map(function (education) {
       return (
         <div key={education.school}>
-          <h3>{education.school}</h3>
+          <h3>{"한양대학교"}</h3>
           <p className="info">
-            {education.degree} <span>&bull;</span>
+            {"박사학위"} <span>&bull;</span>
             <em className="date">{education.graduated}</em>
           </p>
           <p>{education.description}</p>
@@ -50,6 +51,18 @@ class Resume extends Component {
         <li key={skills.name}>
           <span style={{ width, backgroundColor }} className={className}></span>
           <em>{skills.name}</em>
+        </li>
+      );
+    });
+
+    const lectures = Lectures.map((elem) => {
+      return (
+        <li key={elem.id}>
+          <h2>{elem.name}</h2>
+          <h6>{elem.semester}</h6>
+          <h6>{elem.department}</h6>
+          <h6>{elem.style}</h6>
+          <hr />
         </li>
       );
     });
@@ -88,15 +101,15 @@ class Resume extends Component {
           <div className="row skill">
             <div className="three columns header-col">
               <h1>
-                <span>Skills</span>
+                <span>Lectures</span>
               </h1>
             </div>
 
             <div className="nine columns main-col">
-              <p>{skillmessage}</p>
+              <p>{"정연재 교수님께서 인하대학교에서 담당하시는 수업들"}</p>
 
-              <div className="bars">
-                <ul className="skills">{skills}</ul>
+              <div>
+                <ul className="skills">{lectures}</ul>
               </div>
             </div>
           </div>

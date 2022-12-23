@@ -4,12 +4,9 @@ import Fade from "react-reveal";
 
 class Header extends Component {
   render() {
-    if (!this.props.data) return null;
-
-    const project = this.props.data.project;
-    const github = this.props.data.github;
-    const name = this.props.data.name;
-    const description = this.props.data.description;
+    const name = "정연재 교수";
+    const description =
+      "안녕하세요, 정연재 교수입니다. 저의 홈페이지에 오신 것을 환영합니다";
 
     return (
       <header id="home">
@@ -65,16 +62,6 @@ class Header extends Component {
               <h3>{description}.</h3>
             </Fade>
             <hr />
-            <Fade bottom duration={2000}>
-              <ul className="social">
-                <a href={project} className="button btn project-btn">
-                  <i className="fa fa-book"></i>Project
-                </a>
-                <a href={github} className="button btn github-btn">
-                  <i className="fa fa-github"></i>Github
-                </a>
-              </ul>
-            </Fade>
           </div>
         </div>
 
