@@ -5,7 +5,6 @@ class About extends Component {
   render() {
     if (!this.props.data) return null;
 
-    const name = this.props.data.name;
     const profilepic = "images/" + this.props.data.image;
     const bio =
       "인하대학교 프런티어학부대학 조교수, 교양책임교수, 자유전공학부장";

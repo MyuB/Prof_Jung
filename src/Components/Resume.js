@@ -27,18 +27,6 @@ class Resume extends Component {
       );
     });
 
-    const education = this.props.data.education.map(function (education) {
-      return (
-        <div key={education.school}>
-          <h3>{"한양대학교"}</h3>
-          <p className="info">
-            {"박사학위"} <span>&bull;</span>
-            <em className="date">{education.graduated}</em>
-          </p>
-        </div>
-      );
-    });
-
     const work = this.props.data.work.map(function (work) {
       return (
         <div key={work.company}>
