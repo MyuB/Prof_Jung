@@ -35,7 +35,7 @@ const Portfolio = () => {
     <section id="portfolio">
       <Fade left duration={1000} distance="40px">
         <div className="row" style={{ padding: "10px 10px" }}>
-          <h1 style={{ fontSize: "4rem", fontFamily: "NanumSquareE" }}>
+          <h1 style={{ fontSize: "25px", fontFamily: "NanumSquareE" }}>
             주요 학술논문
           </h1>
           <div style={{ textAlign: "left" }}>{papers}</div>
@@ -44,7 +44,7 @@ const Portfolio = () => {
           className="row"
           style={{ marginTop: "50pt", padding: "10px 10px" }}
         >
-          <h1 style={{ fontSize: "4rem", fontFamily: "NanumSquareE" }}>
+          <h1 style={{ fontSize: "25px", fontFamily: "NanumSquareE" }}>
             주요 학술저서
           </h1>
           <div style={{ textAlign: "left" }}>{books}</div>
