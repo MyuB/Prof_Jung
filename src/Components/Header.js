@@ -7,6 +7,7 @@ import "../App.css";
 const Name = styled.p`
   color: white;
   font-size: 8rem;
+  line-height: 8rem;
   font-family: "NanumSquareE";
 `;
 

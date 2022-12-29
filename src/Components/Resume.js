@@ -8,16 +8,16 @@ import "../App.css";
 
 const LargeName = styled.div`
   font-family: "NanumSquareE";
-  font-size: 30px;
+  font-size: 20px;
   color: black;
 `;
 
 const PressName = styled.span`
   font-family: "NanumSquareE";
-  font-size: 30px;
+  font-size: 20px;
   color: black;
   margin-bottom: 10px;
-  line-height: 31px;
+  line-height: 20px;
 `;
 
 class Resume extends Component {
