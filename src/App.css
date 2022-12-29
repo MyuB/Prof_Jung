@@ -18,6 +18,33 @@
   src: url("./assets/fonts/NanumGothic-Regular.ttf");
 }
 
+@font-face {
+  font-family: "NanumSquareE";
+  src: url("./assets/fonts/NanumSquare_acEB.ttf");
+}
+
+@font-face {
+  font-family: "NanumSquareB";
+  src: url("./assets/fonts/NanumSquare_acB.ttf");
+}
+
+@font-face {
+  font-family: "NanumSquareR";
+  src: url("./assets/fonts/NanumSquare_acR.ttf");
+}
+
+.App {
+  font-family: "NanumSquareR";
+}
+
 h1 {
-  font-family: "NanumBold";
+  font-family: "Kyobo2020";
+}
+
+.extra {
+  font-family: "NanumExtra";
+}
+
+.kyobo {
+  font-family: "Kyobo2020";
 }

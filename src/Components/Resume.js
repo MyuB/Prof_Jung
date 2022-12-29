@@ -3,6 +3,22 @@ import Slide from "react-reveal";
 import { Education } from "../Data/Education";
 import { ResearchAndAwards } from "../Data/ResearchAndProject";
 import { Contribution } from "../Data/Contribution";
+import styled from "styled-components";
+import "../App.css";
+
+const LargeName = styled.div`
+  font-family: "NanumSquareE";
+  font-size: 30px;
+  color: black;
+`;
+
+const PressName = styled.span`
+  font-family: "NanumSquareE";
+  font-size: 30px;
+  color: black;
+  margin-bottom: 10px;
+  line-height: 31px;
+`;
 
 class Resume extends Component {
   getRandomColor() {
@@ -20,10 +36,10 @@ class Resume extends Component {
     const edu = Education.map((elem) => {
       return (
         <div key={elem.id}>
-          <h3>
+          <LargeName>
             {elem.shcool} {elem.major}
-          </h3>
-          <p className="info">
+          </LargeName>
+          <p className="info" style={{ fontFamily: "NanumSquareB" }}>
             {elem.degree} <span>&bull; {elem.year}</span>
           </p>
           {elem.paper && (
@@ -38,7 +54,7 @@ class Resume extends Component {
     const raa = ResearchAndAwards.map((elem) => {
       return (
         <div key={elem.id} style={{ width: "100%" }}>
-          <h4>{elem.name}</h4>
+          <PressName>{elem.name}</PressName>
           <p>{elem.year}</p>
         </div>
       );
@@ -47,8 +63,8 @@ class Resume extends Component {
     const contribution = Contribution.map((elem) => {
       return (
         <li key={elem.link}>
-          <h3>{elem.name}</h3>
-          <p>{elem.publication}</p>
+          <PressName>{elem.name}</PressName>
+          <p style={{ marginTop: "10px" }}>{elem.publication}</p>
           <a href={elem.link} target="_blank" rel="noreferrer">
             {elem.link}
           </a>
@@ -59,7 +75,7 @@ class Resume extends Component {
 
     const release = (
       <React.Fragment>
-        <h3>{"대교협, 우수 교양기초교과목 4개 선정 시상"}</h3>
+        <PressName>{"대교협, 우수 교양기초교과목 4개 선정 시상"}</PressName>
         <p>{"한국대학신문 2017년 10월 29일자"}</p>
         <hr />
       </React.Fragment>

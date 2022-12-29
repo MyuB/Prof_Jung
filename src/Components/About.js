@@ -1,5 +1,13 @@
 import React, { Component } from "react";
 import Fade from "react-reveal";
+import styled from "styled-components";
+
+const Temph2 = styled.div`
+  font-family: "NanumSquareE";
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+`;
 
 class About extends Component {
   render() {
@@ -25,11 +33,11 @@ class About extends Component {
               />
             </div>
             <div className="columns main-col">
-              <h2>About Me</h2>
+              <Temph2>About Me</Temph2>
               <p>{bio}</p>
               <div className="row">
                 <div className="columns contact-details">
-                  <h2>Contact Details</h2>
+                  <Temph2>Contact Details</Temph2>
                   <div className="address" style={{ width: "500px" }}>
                     <span style={{ width: "400px" }}>
                       {street}

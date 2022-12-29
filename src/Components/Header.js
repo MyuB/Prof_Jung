@@ -2,6 +2,20 @@ import React, { Component } from "react";
 import Fade from "react-reveal";
 import styled from "styled-components";
 import Lab from "../assets/LabImg.jpg";
+import "../App.css";
+
+const Name = styled.p`
+  color: white;
+  font-size: 8rem;
+  font-family: "NanumSquareE";
+`;
+
+const Description = styled.p`
+  color: white;
+  font-size: 3rem;
+  font-family: "NanumSquareB";
+  margin-top: 6rem;
+`;
 
 const Back = styled.img`
   width: 100%;
@@ -62,10 +76,10 @@ class Header extends Component {
         <div className="row banner" style={{ zIndex: "1" }}>
           <div className="banner-text">
             <Fade bottom>
-              <h1 className="responsive-headline">{name}</h1>
+              <Name>{name}</Name>
             </Fade>
             <Fade bottom duration={1200}>
-              <h3>{description}.</h3>
+              <Description>{description}.</Description>
             </Fade>
             <hr />
           </div>
