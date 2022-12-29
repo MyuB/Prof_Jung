@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Slide from "react-reveal";
 import { Education } from "../Data/Education";
-import { Lectures } from "../Data/Lectures";
 import { ResearchAndAwards } from "../Data/ResearchAndProject";
+import { Contribution } from "../Data/Contribution";
 
 class Resume extends Component {
   getRandomColor() {
@@ -44,30 +44,26 @@ class Resume extends Component {
       );
     });
 
-    const work = this.props.data.work.map(function (work) {
+    const contribution = Contribution.map((elem) => {
       return (
-        <div key={work.company}>
-          <h3>{work.company}</h3>
-          <p className="info">
-            {work.title}
-            <span>&bull;</span> <em className="date">{work.years}</em>
-          </p>
-          <p>{work.description}</p>
-        </div>
-      );
-    });
-
-    const lectures = Lectures.map((elem) => {
-      return (
-        <li key={elem.id}>
-          <h2>{elem.name}</h2>
-          <h6>{elem.semester}</h6>
-          <h6>{elem.department}</h6>
-          <h6>{elem.style}</h6>
+        <li key={elem.link}>
+          <h3>{elem.name}</h3>
+          <p>{elem.publication}</p>
+          <a href={elem.link} target="_blank" rel="noreferrer">
+            {elem.link}
+          </a>
           <hr />
         </li>
       );
     });
+
+    const release = (
+      <React.Fragment>
+        <h3>{"대교협, 우수 교양기초교과목 4개 선정 시상"}</h3>
+        <p>{"한국대학신문 2017년 10월 29일자"}</p>
+        <hr />
+      </React.Fragment>
+    );
 
     return (
       <section id="resume">
@@ -111,15 +107,20 @@ class Resume extends Component {
           <div className="row skill">
             <div className="three columns header-col">
               <h1>
-                <span>Lectures</span>
+                <span>Press</span>
               </h1>
             </div>
 
             <div className="nine columns main-col">
-              <p>{"정연재 교수님께서 인하대학교에서 담당하시는 수업들"}</p>
-
+              <p style={{ fontSize: "2rem" }}>
+                {"정연재 교수님께서 언론에 기고하신 글"}
+              </p>
               <div>
-                <ul className="skills">{lectures}</ul>
+                <ul className="skills">{contribution}</ul>
+              </div>
+              <p style={{ fontSize: "2rem" }}>{"정연재 교수님의 언론 보도"}</p>
+              <div>
+                <ul className="skills">{release}</ul>
               </div>
             </div>
           </div>

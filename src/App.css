@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Kyobo2020";
+  src: url("./assets/fonts/KyoboHandwriting2020pdy.ttf");
+}
+
+@font-face {
+  font-family: "NanumExtra";
+  src: url("./assets/fonts/NanumGothic-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "NanumBold";
+  src: url("./assets/fonts/NanumGothic-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Nanum";
+  src: url("./assets/fonts/NanumGothic-Regular.ttf");
+}
+
+h1 {
+  font-family: "NanumBold";
+}
