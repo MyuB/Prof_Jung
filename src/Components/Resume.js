@@ -107,7 +107,7 @@ class Resume extends Component {
                   Research Projects
                 </span>
                 <span style={{ display: "inline-block", marginTop: "10px" }}>
-                  and Awards
+                  &nbsp;and Awards
                 </span>
               </h1>
             </div>
