@@ -7,7 +7,7 @@ class Portfolio extends Component {
   render() {
     const books = Books.map((elem) => {
       return (
-        <div>
+        <div key={elem.id}>
           <span key={elem.id}>{elem.name}</span>
           <br />
         </div>
@@ -16,7 +16,7 @@ class Portfolio extends Component {
 
     const papers = Papers.map((elem) => {
       return (
-        <div>
+        <div key={elem.id}>
           <span key={elem.id}>{elem.name}</span>
         </div>
       );

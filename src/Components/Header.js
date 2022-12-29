@@ -1,6 +1,27 @@
 import React, { Component } from "react";
 import ParticlesBg from "particles-bg";
 import Fade from "react-reveal";
+import styled from "styled-components";
+import Lab from "../assets/LabImg.jpg";
+
+const Back = styled.img`
+  width: auto;
+  height: 800px;
+  opacity: 0.5;
+  /* z-index: -1; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 0;
+`;
+
+const LabImg = styled.div`
+  background-image: url(${Lab});
+  z-index: -1;
+  position: "absolute";
+  top: 0;
+  left: 0;
+`;
 
 class Header extends Component {
   render() {
@@ -10,7 +31,8 @@ class Header extends Component {
 
     return (
       <header id="home">
-        <ParticlesBg type="circle" bg={true} />
+        {/* <ParticlesBg type="circle" bg={true} /> */}
+        <Back src={Lab} />
 
         <nav id="nav-wrap">
           <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
@@ -47,7 +69,7 @@ class Header extends Component {
           </ul>
         </nav>
 
-        <div className="row banner">
+        <div className="row banner" style={{ zIndex: "1" }}>
           <div className="banner-text">
             <Fade bottom>
               <h1 className="responsive-headline">{name}</h1>
