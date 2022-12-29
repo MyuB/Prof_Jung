@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Slide from "react-reveal";
 import { Education } from "../Data/Education";
 import { Lectures } from "../Data/Lectures";
+import { ResearchAndAwards } from "../Data/ResearchAndProject";
 
 class Resume extends Component {
   getRandomColor() {
@@ -19,10 +20,26 @@ class Resume extends Component {
     const edu = Education.map((elem) => {
       return (
         <div key={elem.id}>
-          <h2>{elem.shcool}</h2>
+          <h3>
+            {elem.shcool} {elem.major}
+          </h3>
           <p className="info">
-            {elem.degree} <span>&bull; {"취득연도"}</span>
+            {elem.degree} <span>&bull; {elem.year}</span>
           </p>
+          {elem.paper && (
+            <p style={{ marginTop: "20px" }}>
+              {"박사학위 논문:"} {elem.paper}
+            </p>
+          )}
+        </div>
+      );
+    });
+
+    const raa = ResearchAndAwards.map((elem) => {
+      return (
+        <div key={elem.id} style={{ width: "100%" }}>
+          <h4>{elem.name}</h4>
+          <p>{elem.year}</p>
         </div>
       );
     });
@@ -74,11 +91,19 @@ class Resume extends Component {
           <div className="row work">
             <div className="three columns header-col">
               <h1>
-                <span>Work</span>
+                <span style={{ display: "inline-block", marginTop: "10px" }}>
+                  Representative
+                </span>
+                <span style={{ display: "inline-block", marginTop: "10px" }}>
+                  Research Projects
+                </span>
+                <span style={{ display: "inline-block", marginTop: "10px" }}>
+                  and Awards
+                </span>
               </h1>
             </div>
 
-            <div className="nine columns main-col">{work}</div>
+            <div className="nine columns main-col">{raa}</div>
           </div>
         </Slide>
 

@@ -1,26 +1,16 @@
 import React, { Component } from "react";
-import ParticlesBg from "particles-bg";
 import Fade from "react-reveal";
 import styled from "styled-components";
 import Lab from "../assets/LabImg.jpg";
 
 const Back = styled.img`
-  width: auto;
+  width: 100%;
   height: 800px;
   opacity: 0.5;
-  /* z-index: -1; */
   position: absolute;
   top: 0;
   left: 0;
   padding: 0 0;
-`;
-
-const LabImg = styled.div`
-  background-image: url(${Lab});
-  z-index: -1;
-  position: "absolute";
-  top: 0;
-  left: 0;
 `;
 
 class Header extends Component {
