@@ -6,8 +6,8 @@ import "../App.css";
 
 const Name = styled.p`
   color: white;
-  font-size: 8rem;
-  line-height: 8rem;
+  font-size: 75px;
+  line-height: 75px;
   font-family: "NanumSquareE";
 `;
 
@@ -62,13 +62,13 @@ class Header extends Component {
 
             <li>
               <a className="smoothscroll" href="#resume">
-                Resume
+                Details
               </a>
             </li>
 
             <li>
               <a className="smoothscroll" href="#portfolio">
-                Works
+                Research
               </a>
             </li>
           </ul>

@@ -2,6 +2,7 @@ export const Papers = [
   {
     id: 1,
     name: "대학 신입생의 대학몰입, 학습참여, 교양교육 만족도가 진로역량과 진로적응성에 미치는 영향 분석, 교육문화연구, 28권,5호, pp. 301~322, 2022",
+    year: 2022,
   },
   {
     id: 2,
@@ -22,6 +23,7 @@ export const Papers = [
   {
     id: 6,
     name: "교양수업 수강생의 자기탐색행동과 삶의 만족에 대한 예측요인 탐색: 기대-가치 이론을 중심으로, 교육문화연구, 27권,6호, pp. 249~268, 2021",
+    year: 2021,
   },
   {
     id: 7,
@@ -42,6 +44,7 @@ export const Papers = [
   {
     id: 11,
     name: "A Hermeneutical Study on Educational Practice for Enhancing Interaction of Learning Community and Learner-focused Educational Experience, 교육철학, 72권, pp. 157~187, 2020",
+    year: 2020,
   },
   {
     id: 12,
@@ -66,6 +69,7 @@ export const Papers = [
   {
     id: 17,
     name: "대학 신입생의 자기효능감, 목표지향성, 학습참여와 교양교육 만족도 간의 관계분석, 학습자중심교과교육연구, 19권,22호, pp. 1271~1296, 2019",
+    year: 2019,
   },
   {
     id: 18,
@@ -90,6 +94,7 @@ export const Papers = [
   {
     id: 23,
     name: "자기주도학습에 기반한 창의학습교과목 운영방안 연구 ― 「프로네시스세미나 Ⅱ: 창의도전과 자기계발」 사례를 중심으로, 교양교육연구, 12권,6호, pp. 95~115, 2018",
+    year: 2018,
   },
   {
     id: 24,
@@ -98,6 +103,7 @@ export const Papers = [
   {
     id: 25,
     name: "창의융복합적 사고 함양을 위한 융합교육 방안 연구 ― 「크로스오버 1: 인간의 탐색」 사례를 중심으로, 교양교육연구, 11권,6호, 2017",
+    year: 2017,
   },
   {
     id: 26,
@@ -106,6 +112,7 @@ export const Papers = [
   {
     id: 27,
     name: "지식의 공유와 협력적 창조를 위한 해석학의 확장적 시도― 위키 기반 협력학습에 근거한 디지털 해석학의 유용성 연구, 교양교육연구, 10권,4호, pp. 109~135, 2016",
+    year: "2016~",
   },
   {
     id: 28,
