@@ -16,7 +16,7 @@ const Portfolio = () => {
   const books = Books.map((elem) => {
     return (
       <div key={elem.id}>
-        <span key={elem.id}>{elem.name}</span>
+        <span key={elem.id}>&bull; {elem.name}</span>
         <br />
       </div>
     );
@@ -26,8 +26,7 @@ const Portfolio = () => {
     return (
       <div key={elem.id}>
         {elem.year && <Year>{elem.year}</Year>}
-        &middot;
-        <span key={elem.id}>{elem.name}</span>
+        <span key={elem.id}>&bull; {elem.name}</span>
       </div>
     );
   });
@@ -36,14 +35,18 @@ const Portfolio = () => {
     <section id="portfolio">
       <Fade left duration={1000} distance="40px">
         <div className="row" style={{ padding: "10px 10px" }}>
-          <h1 style={{ fontSize: "4rem" }}>주요학술논문</h1>
+          <h1 style={{ fontSize: "4rem", fontFamily: "NanumSquareE" }}>
+            주요 학술논문
+          </h1>
           <div style={{ textAlign: "left" }}>{papers}</div>
         </div>
         <div
           className="row"
           style={{ marginTop: "50pt", padding: "10px 10px" }}
         >
-          <h1 style={{ fontSize: "4rem" }}>주요 학술 저서</h1>
+          <h1 style={{ fontSize: "4rem", fontFamily: "NanumSquareE" }}>
+            주요 학술저서
+          </h1>
           <div style={{ textAlign: "left" }}>{books}</div>
         </div>
       </Fade>

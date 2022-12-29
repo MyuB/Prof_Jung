@@ -3,33 +3,25 @@ import Slide from "react-reveal";
 import { Education } from "../Data/Education";
 import { ResearchAndAwards } from "../Data/ResearchAndProject";
 import { Contribution } from "../Data/Contribution";
+import { Press } from "../Data/Press";
 import styled from "styled-components";
 import "../App.css";
 
 const LargeName = styled.div`
   font-family: "NanumSquareE";
-  font-size: 20px;
+  font-size: 18px;
   color: black;
 `;
 
 const PressName = styled.span`
   font-family: "NanumSquareE";
-  font-size: 20px;
+  font-size: 18px;
   color: black;
   margin-bottom: 10px;
-  line-height: 20px;
+  line-height: 18px;
 `;
 
 class Resume extends Component {
-  getRandomColor() {
-    let letters = "0123456789ABCDEF";
-    let color = "#";
-    for (let i = 0; i < 6; i++) {
-      color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
-  }
-
   render() {
     if (!this.props.data) return null;
 
@@ -73,13 +65,18 @@ class Resume extends Component {
       );
     });
 
-    const release = (
-      <React.Fragment>
-        <PressName>{"대교협, 우수 교양기초교과목 4개 선정 시상"}</PressName>
-        <p>{"한국대학신문 2017년 10월 29일자"}</p>
-        <hr />
-      </React.Fragment>
-    );
+    const release = Press.map((elem) => {
+      return (
+        <li key={elem.link}>
+          <PressName>{elem.name}</PressName>
+          <p style={{ marginTop: "10px" }}>{elem.publication}</p>
+          <a href={elem.link} target="_blank" rel="noreferrer">
+            {elem.link}
+          </a>
+          <hr />
+        </li>
+      );
+    });
 
     return (
       <section id="resume">
@@ -128,13 +125,11 @@ class Resume extends Component {
             </div>
 
             <div className="nine columns main-col">
-              <p style={{ fontSize: "2rem" }}>
-                {"정연재 교수님께서 언론에 기고하신 글"}
-              </p>
+              <p style={{ fontSize: "2rem" }}>{"칼럼 기고"}</p>
               <div>
                 <ul className="skills">{contribution}</ul>
               </div>
-              <p style={{ fontSize: "2rem" }}>{"정연재 교수님의 언론 보도"}</p>
+              <p style={{ fontSize: "2rem" }}>{"보도 기사"}</p>
               <div>
                 <ul className="skills">{release}</ul>
               </div>

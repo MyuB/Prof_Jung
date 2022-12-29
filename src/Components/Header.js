@@ -9,11 +9,19 @@ const Name = styled.p`
   font-size: 75px;
   line-height: 75px;
   font-family: "NanumSquareE";
+  letter-spacing: 10px;
+`;
+
+const Eng = styled.p`
+  color: white;
+  font-size: 25px;
+  line-height: 25px;
+  font-family: "NanumSquareE";
 `;
 
 const Description = styled.p`
   color: white;
-  font-size: 3rem;
+  font-size: 38px;
   font-family: "NanumSquareB";
   margin-top: 6rem;
 `;
@@ -30,13 +38,12 @@ const Back = styled.img`
 
 class Header extends Component {
   render() {
-    const name = "정연재 교수";
-    const description =
-      "안녕하세요, 정연재 교수입니다. 저의 홈페이지에 오신 것을 환영합니다";
+    const name = "정연재 ";
+    const eng = "Yeonjae, Jeong, PhD";
+    const description = "Telos horan";
 
     return (
       <header id="home">
-        {/* <ParticlesBg type="circle" bg={true} /> */}
         <Back src={Lab} />
 
         <nav id="nav-wrap">
@@ -78,9 +85,10 @@ class Header extends Component {
           <div className="banner-text">
             <Fade bottom>
               <Name>{name}</Name>
+              <Eng>{eng}</Eng>
             </Fade>
             <Fade bottom duration={1200}>
-              <Description>{description}.</Description>
+              <Description>{description}</Description>
             </Fade>
             <hr />
           </div>
