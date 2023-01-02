@@ -1,3 +1,13 @@
+# DEPLOY
+
+https://yeonjaejeong.netlify.app/
+
+### 1. Cloning Project from below repo
+
+### Description
+#### This project is made of React 18, Styled-Components 
+
+
 # React Nice Resume :page_with_curl:
 
 ### [LIVE DEMO](https://nordicgiant2.github.io/react-nice-resume-page/index.html)
