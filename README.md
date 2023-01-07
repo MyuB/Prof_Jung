@@ -1,3 +1,19 @@
+# DEPLOY
+
+https://yeonjaejeong.netlify.app/
+
+deloyed by Netlify
+
+### 1. Cloning Project from below repo
+
+### Description
+
+This project is made of React 18, Styled-Components 
+
+This project is for Professor Jung Yeonjae's Website.
+MIT License is injected on this project.
+Basic template is from below.
+
 # React Nice Resume :page_with_curl:
 
 ### [LIVE DEMO](https://nordicgiant2.github.io/react-nice-resume-page/index.html)
