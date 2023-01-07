@@ -19,12 +19,12 @@ const Eng = styled.p`
   font-family: "NanumSquareE";
 `;
 
-const Description = styled.p`
-  color: white;
-  font-size: 38px;
-  font-family: "NanumSquareB";
-  margin-top: 6rem;
-`;
+// const Description = styled.p`
+//   color: white;
+//   font-size: 38px;
+//   font-family: "NanumSquareB";
+//   margin-top: 6rem;
+// `;
 
 const Back = styled.img`
   width: 100%;
@@ -39,8 +39,8 @@ const Back = styled.img`
 class Header extends Component {
   render() {
     const name = "정연재 ";
-    const eng = "Yeonjae, Jeong, PhD";
-    const description = "Telos horan";
+    const eng = "Yeonjae Jeong, Ph.D.";
+    // const description = "Telos horan";
 
     return (
       <header id="home">
@@ -88,7 +88,7 @@ class Header extends Component {
               <Eng>{eng}</Eng>
             </Fade>
             <Fade bottom duration={1200}>
-              <Description>{description}</Description>
+              {/* <Description>{description}</Description> */}
             </Fade>
             <hr />
           </div>

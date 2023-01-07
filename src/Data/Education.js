@@ -1,8 +1,8 @@
 export const Education = [
   {
     id: 1,
-    shcool: "한양대학교",
-    major: "철학과(서양철학 전공)",
+    shcool: "한양대학교 대학원",
+    major: "철학과 (서양철학 전공)",
     degree: "Ph.D.",
     year: "1998-2006",
     paper:
@@ -10,15 +10,15 @@ export const Education = [
   },
   {
     id: 2,
-    shcool: "한양대학교",
-    major: "철학과(서양철학 전공)",
+    shcool: "한양대학교 대학원",
+    major: "철학과 (서양철학 전공)",
     degree: "M.S.",
     year: "1994-1997",
   },
   {
     id: 3,
     shcool: "한양대학교",
-    major: "독어독문학과(독일문학 전공)",
+    major: "독어독문학과 (독일문학 전공)",
     degree: "B.S.",
     year: "1987-1994",
   },

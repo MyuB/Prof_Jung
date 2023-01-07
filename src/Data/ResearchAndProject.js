@@ -17,7 +17,7 @@ export const ResearchAndAwards = [
   {
     id: 4,
     year: "[2020년]",
-    name: "인하 좋은 강의상 수상 (「크로스오버 1_인간의 탐색」)",
+    name: "인하 좋은 강의상 수상 (크로스오버1: 인간의 탐색)",
   },
   {
     id: 5,
