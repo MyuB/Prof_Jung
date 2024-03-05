@@ -1,5 +1,15 @@
 export const Press = [
   {
+    name: "2023 대학 e-러닝 기반 학점인정 컨소시엄 강의 우수 교수 시상식 현장에 가보다",
+    publication: "한양뉴스포털 2024년 3월 4일자",
+    link: "https://www.newshyu.com/news/articleView.html?idxno=1013345",
+  },
+  {
+    name: "인하대, 자유전공학부 2023년도 수료식 개최",
+    publication: "교수신문 2023년 12월 13일자",
+    link: "https://www.kyosu.net/news/articleView.html?idxno=113517",
+  },
+  {
     name: "인하대, 2022년 대학혁신지원사업 성과포럼 성료",
     pulication: "교수신문 2022년 12월 15일자",
     link: "http://www.kyosu.net/news/articleView.html?idxno=98100",

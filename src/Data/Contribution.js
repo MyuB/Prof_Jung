@@ -1,5 +1,20 @@
 export const Contribution = [
   {
+    name: "생성형 인공지능과 교육의 효율성 ",
+    publication: "<기호일보> 2024년 2월 5일자",
+    link: "http://www.kihoilbo.co.kr/news/articleView.html?idxno=1071202",
+  },
+  {
+    name: "바다에 대한 공경 그리고 테라 코그니터(terra cognita) ",
+    publication: "<기호일보> 2023년 8월 14일자",
+    link: "http://www.kihoilbo.co.kr/news/articleView.html?idxno=1044650",
+  },
+  {
+    name: "생성인공지능 시대에 소크라테스를 회상함 ",
+    publication: "<기호일보> 2023년 3월 20일자",
+    link: "http://www.kihoilbo.co.kr/news/articleView.html?idxno=1021490",
+  },
+  {
     name: "코로나 이후 교육의 미래 어떻게 상상할 것인가 ",
     publication: "<기호일보> 2022년 10월 24일자",
     link: "http://www.kihoilbo.co.kr/news/articleView.html?idxno=1000568",

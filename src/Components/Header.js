@@ -19,13 +19,6 @@ const Eng = styled.p`
   font-family: "NanumSquareE";
 `;
 
-// const Description = styled.p`
-//   color: white;
-//   font-size: 38px;
-//   font-family: "NanumSquareB";
-//   margin-top: 6rem;
-// `;
-
 const Back = styled.img`
   width: 100%;
   height: 800px;
@@ -76,6 +69,12 @@ class Header extends Component {
             <li>
               <a className="smoothscroll" href="#portfolio">
                 Research
+              </a>
+            </li>
+
+            <li>
+              <a className="smoothscroll" href="#testimonials">
+                Media
               </a>
             </li>
           </ul>
