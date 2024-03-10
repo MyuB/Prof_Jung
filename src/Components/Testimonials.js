@@ -40,7 +40,7 @@ class Testimonials extends Component {
                 marginBottom: "50px",
               }}
             >
-              Media
+              VIDEO CONTENTS
             </h1>
             <div className="ten columns flex-container">{medias}</div>
           </div>

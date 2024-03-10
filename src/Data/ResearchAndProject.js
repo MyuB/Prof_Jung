@@ -2,7 +2,7 @@ export const ResearchAndAwards = [
   {
     id: 0,
     year: "[2023년]",
-    name: "대학 이러닝 기반 학점인정 컨소시엄 강의우수 교수 수상",
+    name: "대학 이러닝 기반 학점인정 컨소시엄 강의 우수교수 수상",
   },
   {
     id: 1,

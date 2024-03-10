@@ -5,7 +5,7 @@ export const Contribution = [
     link: "http://www.kihoilbo.co.kr/news/articleView.html?idxno=1071202",
   },
   {
-    name: "바다에 대한 공경 그리고 테라 코그니터(terra cognita) ",
+    name: "바다에 대한 동경 그리고 테라 코그니타(terra cognita) ",
     publication: "<기호일보> 2023년 8월 14일자",
     link: "http://www.kihoilbo.co.kr/news/articleView.html?idxno=1044650",
   },
