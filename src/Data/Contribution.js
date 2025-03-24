@@ -1,5 +1,15 @@
 export const Contribution = [
   {
+    name: "혼돈과 분열의 광장에서 종교의 본질을 생각하다",
+    publication: "<기호일보> 2025년 3월 24일자",
+    link: "http://prt.kihoilbo.co.kr/news/articleView.html?idxno=1136967",
+  },
+  {
+    name: "자율과 책임의 균형, 전공자율선택제를 바라보는 하나의 시선",
+    publication: "<기호일보> 2024년 9월 30일자",
+    link: "https://www.kihoilbo.co.kr/news/articleView.html?idxno=1112063",
+  },
+  {
     name: "생성형 인공지능과 교육의 효율성 ",
     publication: "<기호일보> 2024년 2월 5일자",
     link: "http://www.kihoilbo.co.kr/news/articleView.html?idxno=1071202",
